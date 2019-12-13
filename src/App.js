@@ -15,14 +15,14 @@ function App() {
   };
   return (
     <div>
-      {/* <h1>ierslkhnfhgn</h1>
+      <h1>ierslkhnfhgn</h1>
 
       <button type="button" onClick={handleOpen}>
         Open Modal
       </button>
       <div className="Modal">
         <Planmodal />
-      </div> */}
+      </div>
 
       <React.Fragment>
         <Switch>
