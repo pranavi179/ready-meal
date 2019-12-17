@@ -3,7 +3,7 @@ import { Layout, Menu, Breadcrumb, Icon } from "antd";
 import "./list.css";
 import "antd/dist/antd.css";
 import Imageslide from "./content";
-import { Switch, Route, Link } from "react-router-dom";
+// import { Switch, Route, Link } from "react-router-dom";
 import Samplemeal from "./samplemeal";
 const { SubMenu } = Menu;
 
@@ -90,10 +90,10 @@ function Footerr() {
           <Content style={{ padding: "0 24px", minHeight: 720 }}>
             <Imageslide />
           </Content>
-          <Switch>
+          {/* <Switch>
             <Route exact path="/" component={Footerr} />
             />
-          </Switch>
+          </Switch> */}
         </Layout>
       </Content>
       <Footer style={{ textAlign: "center" }}>Created By PRANAVI PRAZU</Footer>

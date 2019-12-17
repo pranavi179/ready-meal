@@ -108,19 +108,37 @@ const Samplemeal = () =>
         renderItem={item => (
           <List.Item
             key={item.title}
+            extra={<img width={400} alt="logo" src={ImagesShown} />}
             actions={[
               <IconText type="star-o" text="156" key="list-vertical-star-o" />,
               <IconText type="like-o" text="156" key="list-vertical-like-o" />,
               <IconText type="message" text="2" key="list-vertical-message" />
             ]}
-            extra={<img width={400} alt="logo" src={ImagesShown} />}
           >
             {/* src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png" */}
             <List.Item.Meta
-              title={<a href={item.name}>{item.name}</a>}
-              description={item.description}
+              title={
+                <a
+                  href={item.name}
+                  style={{
+                    fontSize: 24,
+                    fontWeight: "Bold",
+                    textAlign: "center"
+                  }}
+                >
+                  {item.name}
+                </a>
+              }
             />
             {/* avatar={<Avatar src={item.avatar} />} */}
+            <div
+              style={{ fontSize: 16, textAlign: "left", fontWeight: "bold" }}
+            >
+              {" "}
+              Price - {item.price}
+            </div>
+            {/* description={item.description} */}
+
             <div>
               <Date />
             </div>

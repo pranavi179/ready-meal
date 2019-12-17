@@ -7,12 +7,12 @@ import Meallist from "./Components/meallist";
 import Samplemeal from "./Components/samplemeal";
 import Dates from "./Components/date";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Redirect
+// } from "react-router-dom";
 import Footerr from "./Components/Footer";
 function App() {
   return (
@@ -23,8 +23,9 @@ function App() {
         {/* <Route exact path="/footer" component={Footerr} /> */}
       {/* <Redirect to="/samplemeal" />
       </Router> */}
-      {/* <Samplemeal /> */}
-      <Footerr />
+
+      {/* <Footerr /> */}
+      <Samplemeal />
     </div>
   );
 }
