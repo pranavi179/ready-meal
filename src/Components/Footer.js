@@ -92,6 +92,7 @@ function Footerr() {
       </Content>
       <Footer style={{ textAlign: "center" }}>Created By PRANAVI PRAZU</Footer>
     </Layout>
+    
   );
 }
 

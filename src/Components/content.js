@@ -4,7 +4,12 @@ import "./list.css";
 import { Card, Col, Row } from "antd";
 
 import ImagesShown from "./images/Protein8a_retouch_2_xlarge.jpg";
+import ImagesShown1 from "./images/prawns.jpg";
+import ImagesShown2 from "./images/chickenl.jpg";
+import ImagesShown3 from "./images/group.jpg";
 import { Carousel } from "antd";
+import ProductList from "./demo";
+
 class Imageslide extends Component {
   render() {
     // let names = ["Protein8a_retouch_2_xlarge", "prawns", "chickenl", "group"];
@@ -20,25 +25,29 @@ class Imageslide extends Component {
       <div>
         <Carousel autoplay>
           <div>
-            <img src={ImagesShown} alt="not working" />
-            {/*  <h1>4</h1> */}
-            {/* </div>
-          <div>
-            <img src={chickenl} alt="not working" />
-
-            {/* <h2>5</h2>{" "} */}
-            {/* </div>
-          <div>
-            <img src={group} alt="not working" /> */}
-            {/* <h3>f</h3>{" "} */}
-            {/* </div>
-          <div>
-            <h1>fk</h1> */}
+            <img
+              src={ImagesShown}
+              alt="not working"
+              style={{ width: " 100%", height: "600px" }}
+            />
           </div>
+          {/* <div>
+            <img
+              src={ImagesShown1}
+              alt="not working"
+              style={{ width: " 100%", height: "400px" }}
+            />
+          </div>
+          <div>
+            <img src={ImagesShown2} alt="not working" />
+          </div>
+          <div>
+            <img src={ImagesShown3} alt="not working" />
+          </div> */}
         </Carousel>
 
         <div>
-          <div style={{ background: "#ECECEC", padding: "10px" }}>
+          {/* <div style={{ background: "#ECECEC", padding: "10px" }}>
             <Row gutter={20}>
               <Col span={8}>
                 <Card title="Card title" bordered={false}>
@@ -56,8 +65,9 @@ class Imageslide extends Component {
                 </Card>
               </Col>
             </Row>
-          </div>
+          </div> */}
         </div>
+        <ProductList />
       </div>
     );
   }
