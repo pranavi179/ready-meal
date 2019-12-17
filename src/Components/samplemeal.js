@@ -4,6 +4,7 @@ import ImagesShown from "./images/Protein8a_retouch_2_xlarge.jpg";
 import "../index.css";
 // import ImagesShown from "./images/chickenl.jpg";
 import { List, Icon, Avatar, Card, Button } from "antd";
+
 import Date from "./date";
 const { Meta } = Card;
 
@@ -61,7 +62,7 @@ const IconText = ({ type, text }) => (
     {text}
   </span>
 );
-const ComplexList = () =>
+const Samplemeal = () =>
   list.map(item => (
     <Card>
       {" "}
@@ -121,11 +122,18 @@ const ComplexList = () =>
             />
             {/* avatar={<Avatar src={item.avatar} />} */}
             <div>
-              <h3>Select the Date and time </h3>
               <Date />
             </div>
             <div>
-              <Button marginRight="10">Add to Cart</Button>
+              <Button
+                style={{
+                  height: "50px",
+                  backgroundColor: "#76cdd3",
+                  width: "200px"
+                }}
+              >
+                Add to Cart
+              </Button>
             </div>
             {item.content}
           </List.Item>
@@ -134,4 +142,4 @@ const ComplexList = () =>
     </Card>
   ));
 
-export default ComplexList;
+export default Samplemeal;

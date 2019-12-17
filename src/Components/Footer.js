@@ -3,8 +3,8 @@ import { Layout, Menu, Breadcrumb, Icon } from "antd";
 import "./list.css";
 import "antd/dist/antd.css";
 import Imageslide from "./content";
-
-
+import { Switch, Route, Link } from "react-router-dom";
+import Samplemeal from "./samplemeal";
 const { SubMenu } = Menu;
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -20,7 +20,10 @@ function Footerr() {
           style={{ lineHeight: "64px" }}
         >
           <Menu.Item key="1">HOME</Menu.Item>
-          <Menu.Item key="2">MEALS</Menu.Item>
+          <Menu.Item key="2">
+            {/* <Link to="/samplemeal"></Link> */}
+            MEALS
+          </Menu.Item>
           <Menu.Item key="3">HOME FOOD</Menu.Item>
           <Menu.Item key="4">DIET</Menu.Item>
           <Menu.Item key="5">LOGIN/SIGNUP</Menu.Item>
@@ -50,7 +53,6 @@ function Footerr() {
                   </span>
                 }
               >
-          
                 <Menu.Item key="1">BREAKFAST</Menu.Item>
                 <Menu.Item key="2">lUNCH</Menu.Item>
                 <Menu.Item key="3">SNACKS</Menu.Item>
@@ -88,11 +90,14 @@ function Footerr() {
           <Content style={{ padding: "0 24px", minHeight: 720 }}>
             <Imageslide />
           </Content>
+          <Switch>
+            <Route exact path="/" component={Footerr} />
+            />
+          </Switch>
         </Layout>
       </Content>
       <Footer style={{ textAlign: "center" }}>Created By PRANAVI PRAZU</Footer>
     </Layout>
-    
   );
 }
 

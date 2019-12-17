@@ -1,7 +1,7 @@
 import React from "react";
 import "antd/dist/antd.css";
 
-import { DatePicker } from "antd";
+import { DatePicker, Button } from "antd";
 
 const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
 
@@ -19,21 +19,22 @@ function Dates() {
   return (
     <div>
       <div style={{ padding: "24px" }}>
-        <DatePicker onChange={onChange} />
+        <h3>Select the Date and time </h3>
+
+        {/* <DatePicker onChange={onChange} />
         <br />
         <MonthPicker onChange={onChange} placeholder="Select month" />
+        <br /> */}
+        <DatePicker
+          showTime
+          placeholder="Select Time and Date"
+          onChange={onChange}
+          onOk={onOk}
+        />
         <br />
         <RangePicker onChange={onChange} />
         <br />
         <WeekPicker onChange={onChange} placeholder="Select week" />
-      </div>
-      <div>
-        <DatePicker
-          showTime
-          placeholder="Select Time"
-          onChange={onChange}
-          onOk={onOk}
-        />
         <br />
         <RangePicker
           showTime={{ format: "HH:mm" }}
@@ -43,6 +44,13 @@ function Dates() {
           onOk={onOk}
         />
       </div>
+      <Button
+        style={{
+          backgroundColor: "#d9d9d9"
+        }}
+      >
+        Submit
+      </Button>
     </div>
   );
 }
