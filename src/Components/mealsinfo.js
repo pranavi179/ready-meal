@@ -1,7 +1,7 @@
-export const DISHES = [
+export default const DISHES = [
   {
     id: 0,
-    name: "Uthappizza",
+    name: "Biryani",
     image: "/assets/images/uthappizza.png",
     category: "mains",
     label: "Hot",
@@ -12,7 +12,7 @@ export const DISHES = [
   },
   {
     id: 1,
-    name: "Zucchipakoda",
+    name: "Prawns Biryani",
     image: "/assets/images/zucchipakoda.png",
     category: "appetizer",
     label: "",
@@ -23,7 +23,7 @@ export const DISHES = [
   },
   {
     id: 2,
-    name: "Vadonut",
+    name: "Mutton Biryani",
     image: "/assets/images/vadonut.png",
     category: "appetizer",
     label: "New",
@@ -34,7 +34,7 @@ export const DISHES = [
   },
   {
     id: 3,
-    name: "ElaiCheese Cake",
+    name: "Fish ",
     image: "/assets/images/elaicheesecake.png",
     category: "dessert",
     label: "",
