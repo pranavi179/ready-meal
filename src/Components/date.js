@@ -14,6 +14,9 @@ function onChange(date, dateString, value) {
 function onOk(value) {
   console.log("onOk: ", value);
 }
+function onSubmit(value) {
+  console.log("onSubmit:", value);
+}
 
 export default class Dates extends React.Component {
   // save = e => {
@@ -33,54 +36,59 @@ export default class Dates extends React.Component {
   }
 
   handleSubmit(event) {
-    alert("A name was submitted: " + this.state.value);
+    // alert("A dates was submitted: " + this.state.value);
     event.preventDefault();
+    console.log("the dates was submited:");
+    console.log(this.state);
   }
+
   render() {
     return (
-      <div onSubmit={this.handleSubmit}>
-        <div style={{ padding: "24px" }}>
-          {/* <DatePicker onChange={onChange} />
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <div style={{ padding: "24px" }}>
+            {/* <DatePicker onChange={onChange} />
         <br />
         <MonthPicker onChange={onChange} placeholder="Select month" />
         <br /> */}
-          <label>
-            <h4> Select the Date and time you want to get delivered :</h4>{" "}
-            <DatePicker
-              showTime
-              placeholder="Select Time and Date"
+            <label>
+              <h4> Select the Date and time you want to get delivered :</h4>{" "}
+              <DatePicker
+                showTime
+                placeholder="Select Time and Date"
+                onChange={onChange}
+                onOk={onOk}
+              />
+            </label>
+            <br />
+            <h4>Select how many days you want </h4>
+            <RangePicker onChange={onChange} onOk={onOk} />
+            <br />
+            <h4>Even You can select the week too</h4>
+            <WeekPicker
               onChange={onChange}
               onOk={onOk}
+              placeholder="Select week"
             />
-          </label>
-          <br />
-          <h4>Select how many days you want </h4>
-          <RangePicker onChange={onChange} onOk={onOk} />
-          <br />
-          <h4>Even You can select the week too</h4>
-          <WeekPicker
-            onChange={onChange}
-            onOk={onOk}
-            placeholder="Select week"
-          />
-          <br />
-          {/* <RangePicker
+            <br />
+            {/* <RangePicker
             showTime={{ format: "HH:mm" }}
             format="YYYY-MM-DD HH:mm"
             placeholder={["Start Time", "End Time"]}
             onChange={onChange}
             onOk={onOk}
           /> */}
-        </div>
-        <Button
-          type="submit"
-          value="submit"
-          style={{
-            backgroundColor: "#d9d9d9"
-          }}
-        >
-          Submit
-        </Button>
+          </div>
+          <Button
+            type="submit"
+            style={{
+              backgroundColor: "#d9d9d9"
+            }}
+          >
+            Submit
+          </Button>
+          {/* <input type="submit" value="Submit"></input> */}
+        </form>
       </div>
     );
   }
