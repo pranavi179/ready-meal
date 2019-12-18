@@ -10,7 +10,7 @@ function ProductList() {
   for (let i = 0; i < 23; i++) {
     listData.push({
       href: "http://ant.design",
-      title: `Biryani ${i}`,
+      title: `Meal Name ${i}`,
       // avatar:
       // "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
 

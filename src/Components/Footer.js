@@ -3,8 +3,9 @@ import { Layout, Menu, Breadcrumb, Icon } from "antd";
 import "./list.css";
 import "antd/dist/antd.css";
 import Imageslide from "./content";
-// import { Switch, Route, Link } from "react-router-dom";
 import Samplemeal from "./samplemeal";
+import Logo from "./images/menuicon.jpg";
+import { Link, Switch, Route } from "react-router-dom";
 const { SubMenu } = Menu;
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -13,16 +14,19 @@ function Footerr() {
     <Layout>
       <Header className="header">
         <div className="logo" />
+
         <Menu
           theme="dark"
           mode="horizontal"
           defaultSelectedKeys={["2"]}
           style={{ lineHeight: "64px" }}
+          
         >
-          <Menu.Item key="1">HOME</Menu.Item>
+          <Menu.Item key="1">
+            <Link to="/"></Link>HOME
+          </Menu.Item>
           <Menu.Item key="2">
-            {/* <Link to="/samplemeal"></Link> */}
-            MEALS
+            <Link to="/samplemeal"> MEALS</Link>
           </Menu.Item>
           <Menu.Item key="3">HOME FOOD</Menu.Item>
           <Menu.Item key="4">DIET</Menu.Item>
@@ -88,12 +92,12 @@ function Footerr() {
             </Menu>
           </Sider>
           <Content style={{ padding: "0 24px", minHeight: 720 }}>
-            <Imageslide />
+            {/* <Imageslide /> */}
+            <Switch>
+              <Route exact path="/" component={Imageslide} />
+              <Route exact path="/samplemeal" component={Samplemeal} />
+            </Switch>
           </Content>
-          {/* <Switch>
-            <Route exact path="/" component={Footerr} />
-            />
-          </Switch> */}
         </Layout>
       </Content>
       <Footer style={{ textAlign: "center" }}>Created By PRANAVI PRAZU</Footer>

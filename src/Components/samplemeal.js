@@ -4,6 +4,7 @@ import ImagesShown from "./images/Protein8a_retouch_2_xlarge.jpg";
 import "../index.css";
 // import ImagesShown from "./images/chickenl.jpg";
 import { List, Icon, Avatar, Card, Button } from "antd";
+import Footerr from "./Footer";
 
 import Date from "./date";
 const { Meta } = Card;
@@ -58,7 +59,7 @@ const list = [
 // function Product() {
 const IconText = ({ type, text }) => (
   <span>
-    <Icon type={type} style={{ marginRight: 8, height: "10%" }} />
+    <Icon type={type} style={{ marginRight: 10, height: "10%" }} />
     {text}
   </span>
 );
@@ -108,7 +109,7 @@ const Samplemeal = () =>
         renderItem={item => (
           <List.Item
             key={item.title}
-            extra={<img width={400} alt="logo" src={ImagesShown} />}
+            extra={<img width={450} alt="proteinimage" src={ImagesShown} />}
             actions={[
               <IconText type="star-o" text="156" key="list-vertical-star-o" />,
               <IconText type="like-o" text="156" key="list-vertical-like-o" />,
@@ -126,13 +127,14 @@ const Samplemeal = () =>
                     textAlign: "center"
                   }}
                 >
+                  {" "}
                   {item.name}
                 </a>
               }
             />
             {/* avatar={<Avatar src={item.avatar} />} */}
             <div
-              style={{ fontSize: 16, textAlign: "left", fontWeight: "bold" }}
+              style={{ fontSize: 18, textAlign: "left", fontWeight: "bold" }}
             >
               {" "}
               Price - {item.price}
@@ -141,18 +143,22 @@ const Samplemeal = () =>
 
             <div>
               <Date />
+              <br />
             </div>
             <div>
               <Button
                 style={{
+                  fontSize: 18,
                   height: "50px",
                   backgroundColor: "#76cdd3",
                   width: "200px"
                 }}
               >
+                <Icon type="shopping-cart" />
                 Add to Cart
               </Button>
             </div>
+
             {item.content}
           </List.Item>
         )}

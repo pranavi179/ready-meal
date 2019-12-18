@@ -6,7 +6,12 @@ import Footer from "./Components/Footer";
 import Meallist from "./Components/meallist";
 import Samplemeal from "./Components/samplemeal";
 import Dates from "./Components/date";
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -17,15 +22,14 @@ import Footerr from "./Components/Footer";
 function App() {
   return (
     <div>
-      {/* <Router>
+      <Router>
         <Route path="/" component={Footerr} />
+      </Router>
+      {/* <Route exact path="/footer" component={Footerr} />
+   <Redirect to="/samplemeal" /> */}
 
-        {/* <Route exact path="/footer" component={Footerr} /> */}
-      {/* <Redirect to="/samplemeal" />
-      </Router> */}
-
-      {/* <Footerr /> */}
-      <Samplemeal />
+      {/* <Footerr />
+      <Samplemeal /> */}
     </div>
   );
 }
