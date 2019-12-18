@@ -4,6 +4,9 @@ import "./list.css";
 import "antd/dist/antd.css";
 import Imageslide from "./content";
 import Samplemeal from "./samplemeal";
+import SignInForm from "../component/signinform";
+import SignUpForm from "../component/signupform";
+import Planmodal from "../component/planmodal";
 import Logo from "./images/menuicon.jpg";
 import { Link, Switch, Route } from "react-router-dom";
 const { SubMenu } = Menu;
@@ -13,14 +16,13 @@ function Footerr() {
   return (
     <Layout>
       <Header className="header">
-        <div className="logo" />
+        {/* <div className="logo" /> */}
 
         <Menu
           theme="dark"
           mode="horizontal"
-          defaultSelectedKeys={["2"]}
+          defaultSelectedKeys={["1"]}
           style={{ lineHeight: "64px" }}
-          
         >
           <Menu.Item key="1">
             <Link to="/"></Link>HOME
@@ -30,14 +32,16 @@ function Footerr() {
           </Menu.Item>
           <Menu.Item key="3">HOME FOOD</Menu.Item>
           <Menu.Item key="4">DIET</Menu.Item>
-          <Menu.Item key="5">LOGIN/SIGNUP</Menu.Item>
+          <Menu.Item key="1">
+            <Link to="/planmodal">LOGIN/SIGNUP </Link>
+          </Menu.Item>
         </Menu>
       </Header>
       <Content style={{ padding: "100 50px" }}>
         <Breadcrumb style={{ margin: "16px 0" }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
-          {/* <Breadcrumb.Item>Meal List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item> */}
+          <Breadcrumb.Item>Meal List</Breadcrumb.Item>
+          {/* <Breadcrumb.Item></Breadcrumb.Item> */}
         </Breadcrumb>
         <Layout
           style={{ padding: "24px 0", background: "#fff", minHeight: 500 }}
@@ -96,11 +100,23 @@ function Footerr() {
             <Switch>
               <Route exact path="/" component={Imageslide} />
               <Route exact path="/samplemeal" component={Samplemeal} />
+              <Route exact path="/planmodal" component={Planmodal} />
+              <Route exact path="/Signinform" component={SignInForm} />
+              <Route exact path="/signupform" component={SignUpForm} />
             </Switch>
           </Content>
         </Layout>
       </Content>
-      <Footer style={{ textAlign: "center" }}>Created By PRANAVI PRAZU</Footer>
+      <Footer
+        style={{
+          textAlign: "center",
+          height: "20px",
+          fontWeight: "bold",
+          fontSize: "30px"
+        }}
+      >
+        Created By PRANAVI PRAZU
+      </Footer>
     </Layout>
   );
 }
