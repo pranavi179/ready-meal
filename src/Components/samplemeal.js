@@ -6,7 +6,8 @@ import "../index.css";
 import { List, Icon, Avatar, Card, Button, Rate } from "antd";
 import Footerr from "./Footer";
 import Tab from "./tab";
-
+import { Link } from "react-router-dom";
+import All from "../check/all";
 import Date from "./date";
 const { Meta } = Card;
 
@@ -176,8 +177,7 @@ const Samplemeal = () =>
                   width: "200px"
                 }}
               >
-                <Icon type="shopping-cart" />
-                Add
+                <Icon type="shopping-cart" /> <Link to="/all ">Add</Link>
               </Button>
             </div>
             {item.content}

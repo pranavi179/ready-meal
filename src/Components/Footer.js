@@ -39,8 +39,11 @@ function Footerr() {
           </Menu.Item>
           <Menu.Item key="3">HOME FOOD</Menu.Item>
           <Menu.Item key="4">DIET</Menu.Item>
-          <Menu.Item key="1">
+          <Menu.Item key="5">
             <Link to="/planmodal">LOGIN/SIGNUP </Link>
+          </Menu.Item>
+          <Menu.Item key="6">
+            <Link to="/all">CART</Link>
           </Menu.Item>
         </Menu>
       </Header>

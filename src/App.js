@@ -9,6 +9,10 @@ import Dates from "./Components/date";
 import SignInForm from "./component/signinform";
 import SignUpForm from "./component/signupform";
 import Planmodal from "./component/planmodal";
+
+import Checkout from "./check/Checkout";
+import StickyFooter from "./check/StickyFooter";
+import Cartreact from "./Components/cartreact";
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,7 +30,6 @@ function App() {
   return (
     <div>
       {/* <h1>ierslkhnfhgn</h1>  */}
-
       <Router>
         <Route path="/" component={Footerr} />
       </Router>
@@ -38,9 +41,11 @@ function App() {
       </React.Fragment> */}
       {/* <Route exact path="/footer" component={Footerr} />
    <Redirect to="/samplemeal" /> */}
-
       {/* <Footerr />
       <Samplemeal /> */}
+      {/* <Checkout />
+
+      <StickyFooter /> */}
     </div>
   );
 }
