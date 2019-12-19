@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
@@ -32,6 +33,20 @@ function App() {
       </React.Fragment>
     </div>
   );
+=======
+import React from 'react';
+import './App.css';
+import './components/Checkout';
+import Checkout from './components/Checkout';
+import StickyFooter from './components/Footer';
+function App() {
+	return (
+		<div className="App">
+			<Checkout />
+			<StickyFooter />
+		</div>
+	);
+>>>>>>> checkout
 }
 
 export default App;
