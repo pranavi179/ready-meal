@@ -24,6 +24,13 @@ function Footerr() {
           defaultSelectedKeys={["1"]}
           style={{ lineHeight: "64px" }}
         >
+          <Menu.Item
+            to="/"
+            key="2"
+            style={{ fontSize: "36px", fontWeight: "bold" }}
+          >
+            <Link to="/">Hygge</Link>
+          </Menu.Item>
           <Menu.Item key="1">
             <Link to="/"></Link>HOME
           </Menu.Item>
@@ -110,9 +117,10 @@ function Footerr() {
       <Footer
         style={{
           textAlign: "center",
+          textDecorationColor: "#13c2c2",
           height: "20px",
           fontWeight: "bold",
-          fontSize: "30px"
+          fontSize: "35px"
         }}
       >
         Created By PRANAVI PRAZU

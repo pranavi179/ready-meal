@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "antd/dist/antd.css";
 import SignInForm from "./signinform";
+import { Carousel } from "antd";
+import "./modal.css";
 
 import { Modal, Button } from "antd";
 import SignUpForm from "./signupform";
@@ -23,34 +24,46 @@ class Planmodal extends React.Component {
   render() {
     return (
       <div>
-        <Button type="primary" onClick={() => this.setModal1Visible(true)}>
-          Login here
-        </Button>
-        <Modal
-          title="Login"
-          style={{ top: 20 }}
-          visible={this.state.modal1Visible}
-          onOk={() => this.setModal1Visible(false)}
-          onCancel={() => this.setModal1Visible(false)}
-        >
-          <SignInForm />
-        </Modal>
-        <br />
-        <br />
-        <Button type="primary" onClick={() => this.setModal2Visible(true)}>
-          Register
-        </Button>
-        <Modal
-          title="Register Here "
-          centered
-          visible={this.state.modal2Visible}
-          onOk={() => this.setModal2Visible(false)}
-          onCancel={() => this.setModal2Visible(false)}
-        >
-          <SignUpForm />
-        </Modal>
-        <br />
-        <br />
+        <Carousel autoplay>
+          <Button
+            type="primary"
+            style={{ height: " 80px", width: "100%" }}
+            onClick={() => this.setModal1Visible(true)}
+          >
+            Login here
+          </Button>
+          <div>
+            <Modal
+              title="Login"
+              style={{ top: 20, fontSize: "30px" }}
+              visible={this.state.modal1Visible}
+              onOk={() => this.setModal1Visible(false)}
+              onCancel={() => this.setModal1Visible(false)}
+            >
+              <SignInForm />
+            </Modal>
+          </div>
+          <div>
+            <Button
+              type="primary"
+              style={{ height: " 80px", width: "100%" }}
+              onClick={() => this.setModal2Visible(true)}
+            >
+              Register
+            </Button>
+            <Modal
+              title="Register Here "
+              centered
+              visible={this.state.modal2Visible}
+              onOk={() => this.setModal2Visible(false)}
+              onCancel={() => this.setModal2Visible(false)}
+            >
+              <SignUpForm />
+            </Modal>
+            <br />
+            <br />
+          </div>
+        </Carousel>
       </div>
     );
   }

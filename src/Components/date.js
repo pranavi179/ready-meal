@@ -46,7 +46,7 @@ export default class Dates extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <div style={{ padding: "24px" }}>
+          <div style={{ padding: "10px", fontWeight: "bold" }}>
             {/* <DatePicker onChange={onChange} />
         <br />
         <MonthPicker onChange={onChange} placeholder="Select month" />
@@ -82,7 +82,8 @@ export default class Dates extends React.Component {
           <Button
             type="submit"
             style={{
-              backgroundColor: "#d9d9d9"
+              color: "brown",
+              height: "40px"
             }}
           >
             Submit

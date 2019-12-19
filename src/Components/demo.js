@@ -2,14 +2,15 @@ import React from "react";
 import "antd/dist/antd.css";
 import ImagesShown from "./images/Protein8a_retouch_2_xlarge.jpg";
 import "../index.css";
+import { Link } from "react-router-dom";
 
-import { List, Avatar, Icon } from "antd";
+import { List, Avatar, Icon, Button } from "antd";
 
 function ProductList() {
   const listData = [];
   for (let i = 0; i < 23; i++) {
     listData.push({
-      href: "http://ant.design",
+      href: "./samplemeal",
       title: `Meal Name ${i}`,
       // avatar:
       // "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
@@ -50,7 +51,9 @@ function ProductList() {
         dataSource={listData}
         footer={
           <div>
-            <b>Add button to this cards</b> footer part
+            <Link to="/samplemeal" style={{ fontSize: "20px" }}>
+              For more .....
+            </Link>
           </div>
         }
         renderItem={item => (
@@ -65,12 +68,30 @@ function ProductList() {
           >
             {/* src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png" */}
             <List.Item.Meta
-              title={<a href={item.href}>{item.title}</a>}
+              title={
+                <a
+                  href={item.href}
+                  style={{ fontWeight: "bold", height: "20px" }}
+                >
+                  {item.title}
+                </a>
+              }
               description={item.description}
+              style={{ fontWeight: "bold", fontSize: "20px" }}
             />
             {/* avatar={<Avatar src={item.avatar} />} */}
-
             {item.content}
+            <Button
+              style={{
+                fontSize: 18,
+                height: "50px",
+                backgroundColor: "#13c2c2",
+                width: "100px"
+              }}
+            >
+              <Icon type="shopping-cart" />
+              Add
+            </Button>{" "}
           </List.Item>
         )}
       />

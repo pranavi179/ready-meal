@@ -53,7 +53,7 @@ class Imageslide extends Component {
             />
           </div>
         </Carousel>
-
+        <br />
         <div>
           {/* <div style={{ background: "#ECECEC", padding: "10px" }}>
             <Row gutter={20}>

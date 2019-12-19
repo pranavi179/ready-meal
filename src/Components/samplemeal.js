@@ -17,11 +17,11 @@ const list = [
     // image: "./images/chickenl.jpg",
     category: "mains",
     label: "Hot",
-    price: "4.99",
-
+    price: "499",
+    restaurant: "Paradise",
     featured: true,
     description:
-      "A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer."
+      "A unique combination of Indian Uthappam (pancake) and Italian pizza."
   },
   {
     id: 1,
@@ -29,7 +29,9 @@ const list = [
     image: "/assets/images/zucchipakoda.png",
     category: "appetizer",
     label: "",
-    price: "1.99",
+    price: "799",
+    restaurant: "Pakwaan",
+
     featured: false,
     description:
       "Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce"
@@ -40,7 +42,9 @@ const list = [
     image: "/assets/images/vadonut.png",
     category: "appetizer",
     label: "New",
-    price: "1.99",
+    price: "599",
+    restaurant: " Bawarchi",
+
     featured: false,
     description:
       "A quintessential ConFusion experience, is it a vada or is it a donut?"
@@ -51,7 +55,9 @@ const list = [
     image: "/assets/images/elaicheesecake.png",
     category: "dessert",
     label: "",
-    price: "2.99",
+    price: "2+799",
+    restaurant: "Paradise",
+
     featured: false,
     description:
       "A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms"
@@ -138,7 +144,7 @@ const Samplemeal = () =>
                     fontSize: 24,
                     fontWeight: "Bold",
                     textAlign: "center",
-                    color: "#13c2c2"
+                    color: "brown"
                   }}
                 >
                   {" "}
@@ -148,15 +154,18 @@ const Samplemeal = () =>
             />
             {/* avatar={<Avatar src={item.avatar} />} */}
             <div
-              style={{ fontSize: 18, textAlign: "left", fontWeight: "bold" }}
+              style={{ fontSize: 20, textAlign: "left", fontWeight: "bold" }}
             >
-              {" "}
+              <div style={{ color: " brown " }}>
+                Restaurant : {item.restaurant}
+              </div>{" "}
               Price - {item.price}
-            </div>
-            About : {item.description}
-            <div>
-              <Date />
               <br />
+              {item.description}
+              <div>
+                <Date />
+                <br />
+              </div>
             </div>
             <div>
               <Button
