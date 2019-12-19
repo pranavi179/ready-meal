@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./App.css";
 // import View from "./Components/layout";
@@ -44,4 +45,20 @@ function App() {
     </div>
   );
 }
+=======
+import React from 'react';
+import './App.css';
+import './components/Checkout';
+import Checkout from './components/Checkout';
+import StickyFooter from './components/Footer';
+function App() {
+	return (
+		<div className="App">
+			<Checkout />
+			<StickyFooter />
+		</div>
+	);
+}
+
+>>>>>>> checkout
 export default App;
