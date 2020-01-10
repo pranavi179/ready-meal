@@ -11,8 +11,7 @@ import SignUpForm from "./component/signupform";
 import Planmodal from "./component/planmodal";
 
 import Checkout from "./check/Checkout";
-import StickyFooter from "./check/StickyFooter";
-import Cartreact from "./Components/cartreact";
+
 import {
   BrowserRouter as Router,
   Switch,
