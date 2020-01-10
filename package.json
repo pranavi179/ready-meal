@@ -1,29 +1,18 @@
 {
-<<<<<<< HEAD
   "name": "meal-subscription",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.7.2",
-=======
-  "name": "ready-meal",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.8.0",
->>>>>>> checkout
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.3",
     "@testing-library/user-event": "^7.1.2",
+    "antd": "^3.26.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-<<<<<<< HEAD
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
     "react-spring": "^8.0.27"
-=======
-    "react-scripts": "3.3.0"
->>>>>>> checkout
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,14 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
-  }
-=======
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {},
-  "author": "",
-  "license": "ISC"
->>>>>>> checkout
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7"
+  }
 }

@@ -1,52 +1,50 @@
-<<<<<<< HEAD
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-
+// import View from "./Components/layout";
+import Footer from "./Components/Footer";
+// import Meallist from "./Components/meallist";
+import Meallist from "./Components/meallist";
+import Samplemeal from "./Components/samplemeal";
+import Dates from "./Components/date";
 import SignInForm from "./component/signinform";
 import SignUpForm from "./component/signupform";
-import { Switch, Route } from "react-router-dom";
 import Planmodal from "./component/planmodal";
 
+import Checkout from "./check/Checkout";
+import StickyFooter from "./check/StickyFooter";
+import Cartreact from "./Components/cartreact";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Redirect
+// } from "react-router-dom";
+import Footerr from "./Components/Footer";
 function App() {
-  const [setOpen] = React.useState(false);
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
   return (
     <div>
-      {/* <h1>ierslkhnfhgn</h1>
-
-      <button type="button" onClick={handleOpen}>
-        Open Modal
-      </button>
-      <div className="Modal">
-        <Planmodal />
-      </div> */}
-
-      <React.Fragment>
+      {/* <h1>ierslkhnfhgn</h1>  */}
+      <Router>{/* <Route path="/" component={Footerr} /> */}</Router>
+      {/* <React.Fragment>
         <Switch>
-          <Route exact path="/signinform" component={SignInForm} />
+          <Route exact path="/Signinform" component={SignInForm} />
           <Route exact path="/signupform" component={SignUpForm} />
         </Switch>
-      </React.Fragment>
+      </React.Fragment> */}
+      <Route exact path="/footer" component={Footerr} />
+      <Redirect to="/samplemeal" />
+      <Footerr />
+      {/* <Samplemeal /> */}
+      {/* <Checkout />
+
+      <StickyFooter /> */}
     </div>
   );
-=======
-import React from 'react';
-import './App.css';
-import './components/Checkout';
-import Checkout from './components/Checkout';
-import StickyFooter from './components/Footer';
-function App() {
-	return (
-		<div className="App">
-			<Checkout />
-			<StickyFooter />
-		</div>
-	);
->>>>>>> checkout
 }
-
 export default App;

@@ -1,0 +1,39 @@
+.list {
+  border: 1px solid black;
+  height: 200px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.logo {
+  width: 120px;
+  height: 31px;
+  background-image: url(./images/menuicon.jpg);
+  /* background: rgba(255, 255, 255, 0.2);   */
+  margin: 16px 28px 16px 0;
+  float: left;
+}
+#components-layout-demo-top-side .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 28px 16px 0;
+  float: left;
+}
+
+/* For demo */
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #feffff;
+  overflow: hidden;
+  width: 200px;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+/* 
+.Imagesshown {
+  background-image: url(./images/Protein8a_retouch_2_xlarge.jpg);
+} */

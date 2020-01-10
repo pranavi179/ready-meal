@@ -89,7 +89,7 @@ class SignUpForm extends Component {
             />
           </div>
 
-          <div className="FormField">
+          {/* <div className="FormField">
             <label className="FormField__CheckboxLabel">
               <input
                 type="FormField__Checkbox"
@@ -103,7 +103,7 @@ class SignUpForm extends Component {
                 Terms of Service
               </a>
             </label>
-          </div>
+          </div> */}
 
           <div className="FormField">
             <button className="FormField__Button mr-20">Sign Up</button>

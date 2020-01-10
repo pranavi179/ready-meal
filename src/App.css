@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -36,7 +35,17 @@
   to {
     transform: rotate(360deg);
   }
-} */
+}
+
+#content {
+  padding-top: 70px;
+  min-height: calc(100vh - 92px);
+}
+footer {
+  border-radius: 0 !important;
+  border-bottom: 0;
+  margin: 20px 0 0;
+}
 
 :root {
   --mainBlue: #2a2a72;
@@ -208,6 +217,3 @@ body {
   padding-bottom: 2px;
   margin-left: 5px;
 }
-=======
-
->>>>>>> checkout
