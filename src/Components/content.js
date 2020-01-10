@@ -31,13 +31,13 @@ class Imageslide extends Component {
               style={{ width: " 100%", height: "600px" }}
             />
           </div>
-          <div>
+          {/* <div>
             <img
               src={ImagesShown1}
               alt="not working"
               style={{ width: "100%", height: "600px" }}
             />
-          </div>
+          </div> */}
           <div>
             <img
               src={ImagesShown2}
@@ -45,13 +45,13 @@ class Imageslide extends Component {
               style={{ width: "100%", height: "680px" }}
             />
           </div>
-          <div>
+          {/* <div>
             <img
               src={ImagesShown3}
               alt="not working"
               style={{ width: "100%", height: "600px" }}
             />
-          </div>
+          </div> */}
         </Carousel>
         <br />
         <div>

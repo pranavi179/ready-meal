@@ -30,19 +30,17 @@ function App() {
   return (
     <div>
       {/* <h1>ierslkhnfhgn</h1>  */}
-      <Router>
-        <Route path="/" component={Footerr} />
-      </Router>
+      <Router>{/* <Route path="/" component={Footerr} /> */}</Router>
       {/* <React.Fragment>
         <Switch>
           <Route exact path="/Signinform" component={SignInForm} />
           <Route exact path="/signupform" component={SignUpForm} />
         </Switch>
       </React.Fragment> */}
-      {/* <Route exact path="/footer" component={Footerr} />
-   <Redirect to="/samplemeal" /> */}
-      {/* <Footerr />
-      <Samplemeal /> */}
+      <Route exact path="/footer" component={Footerr} />
+      <Redirect to="/samplemeal" />
+      <Footerr />
+      {/* <Samplemeal /> */}
       {/* <Checkout />
 
       <StickyFooter /> */}

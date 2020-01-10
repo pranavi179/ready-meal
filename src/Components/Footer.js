@@ -126,7 +126,7 @@ function Footerr() {
           fontSize: "35px"
         }}
       >
-        Created By PRANAVI PRAZU
+        Created By HYGGE TEAM
       </Footer>
     </Layout>
   );

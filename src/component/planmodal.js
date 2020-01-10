@@ -27,7 +27,7 @@ class Planmodal extends React.Component {
         <Carousel autoplay>
           <Button
             type="primary"
-            style={{ height: " 80px", width: "100%" }}
+            style={{ height: " 100px", width: "100%" }}
             onClick={() => this.setModal1Visible(true)}
           >
             Login here
@@ -46,7 +46,7 @@ class Planmodal extends React.Component {
           <div>
             <Button
               type="primary"
-              style={{ height: " 80px", width: "100%" }}
+              style={{ height: " 60px", width: "100%" }}
               onClick={() => this.setModal2Visible(true)}
             >
               Register
