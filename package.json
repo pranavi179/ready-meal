@@ -20,7 +20,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
 
-    "react-shopping-cart": "^1.8.32"
+    "react-shopping-cart": "^1.8.32",
 
     "react-spring": "^8.0.27"
 
