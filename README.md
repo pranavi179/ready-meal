@@ -20,7 +20,41 @@ Css ,<br />
 
  ## Some of our  Screenshots
  
- 
+### Homepage  <br/> 
+ ![homepage](https://github.com/pranavi179/ready-meal/blob/master/screenshots/hyggehp.png )
+<br />
+  ![homepage](https://github.com/pranavi179/ready-meal/blob/master/screenshots/hp1.png)
+<br />
+### meals
+![main meal](https://github.com/pranavi179/ready-meal/blob/master/screenshots/meal.png)
+<br />
+![meal1](https://github.com/pranavi179/ready-meal/blob/master/screenshots/meal1.png)
+<br />
+![meal2](https://github.com/pranavi179/ready-meal/blob/master/screenshots/meal2.png)
+<br />
+
+### login
+![login](https://github.com/pranavi179/ready-meal/blob/master/screenshots/login.png)
+
+###Register 
+![Register](https://github.com/pranavi179/ready-meal/blob/master/screenshots/register.png)
+<br />
+![Register page](https://github.com/pranavi179/ready-meal/blob/master/screenshots/register1.png)
+
+###CHeckout form
+
+![checkout](https://github.com/pranavi179/ready-meal/blob/master/screenshots/checkout1.png)
+<br />
+
+![payment](https://github.com/pranavi179/ready-meal/blob/master/screenshots/payment.png)
+
+<br />
+![Review](https://github.com/pranavi179/ready-meal/blob/master/screenshots/reiew.png)
+<br />
+![Result](https://github.com/pranavi179/ready-meal/blob/master/screenshots/result.png)
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
