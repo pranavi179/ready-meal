@@ -45,13 +45,11 @@ Css ,<br />
 
 ![checkout](https://github.com/pranavi179/ready-meal/blob/master/screenshots/checkout1.png)
 <br />
-
 ![payment](https://github.com/pranavi179/ready-meal/blob/master/screenshots/payment.png)
-
 <br />
-! [review](https://github.com/pranavi179/ready-meal/blob/master/screenshots/reiew.png)
+![review](https://github.com/pranavi179/ready-meal/blob/master/screenshots/reiew.png)
 <br />
-! [result](https://github.com/pranavi179/ready-meal/blob/master/screenshots/result.png)
+![result](https://github.com/pranavi179/ready-meal/blob/master/screenshots/result.png)
 
 
 
