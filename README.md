@@ -1,3 +1,27 @@
+# Hygge Web Application
+This project was a Subscrition based ordering meal .
+
+### Tools and Technologies used :
+
+React ,<br />
+Javascript <br />
+Antd,<br />
+JSX , <br />
+Css ,<br />
+
+## Deep dive into project
+--> download / Clone the repository <br/>
+--> install the node module
+### npm install
+
+
+--> To Run
+### npm start 
+
+ ## Some of our  Screenshots
+ 
+ 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
